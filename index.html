@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheraFlow - Practice Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">TheraFlow</p>
+          <h1>Manage psychotherapy clients and bookings in one calm workspace.</h1>
+          <p class="subhead">
+            Keep waitlists, client notes, and session schedules in sync while protecting privacy and preventing
+            no-shows.
+          </p>
+          <div class="hero-actions">
+            <button class="primary">Create new booking</button>
+            <button class="secondary">Invite care team</button>
+          </div>
+        </div>
+        <div class="summary-card">
+          <h2>Today at a glance</h2>
+          <ul>
+            <li><span>Sessions</span><strong>8</strong></li>
+            <li><span>Waitlist</span><strong>12</strong></li>
+            <li><span>Care plans due</span><strong>3</strong></li>
+          </ul>
+          <div class="status">
+            <span>Practice status</span>
+            <strong>Accepting new clients</strong>
+          </div>
+        </div>
+      </header>
+
+      <main class="grid">
+        <section class="panel">
+          <div class="panel-header">
+            <h3>Upcoming bookings</h3>
+            <button class="ghost">View calendar</button>
+          </div>
+          <div class="table">
+            <div class="table-row table-head">
+              <span>Client</span>
+              <span>Session</span>
+              <span>Location</span>
+              <span>Status</span>
+            </div>
+            <div class="table-row">
+              <span>
+                <strong>Avery Lin</strong>
+                <small>Trauma-focused CBT</small>
+              </span>
+              <span>Today · 10:00 AM</span>
+              <span>Room 2 · In person</span>
+              <span class="pill confirmed">Confirmed</span>
+            </div>
+            <div class="table-row">
+              <span>
+                <strong>Jordan Patel</strong>
+                <small>Couples session</small>
+              </span>
+              <span>Today · 1:30 PM</span>
+              <span>Telehealth</span>
+              <span class="pill pending">Needs intake</span>
+            </div>
+            <div class="table-row">
+              <span>
+                <strong>Riley Gomez</strong>
+                <small>Initial consult</small>
+              </span>
+              <span>Tomorrow · 9:00 AM</span>
+              <span>Room 1 · In person</span>
+              <span class="pill hold">Hold for insurance</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <h3>Client profiles</h3>
+            <button class="ghost">Open directory</button>
+          </div>
+          <div class="client-list">
+            <article>
+              <h4>Mei Chen</h4>
+              <p>Last session: 5 days ago · Next: Thursday 3:00 PM</p>
+              <div class="tags">
+                <span>Care plan updated</span>
+                <span>Weekly</span>
+              </div>
+            </article>
+            <article>
+              <h4>Samira Khan</h4>
+              <p>Last session: 12 days ago · Next: Tuesday 11:00 AM</p>
+              <div class="tags">
+                <span>Needs assessment</span>
+                <span>Biweekly</span>
+              </div>
+            </article>
+            <article>
+              <h4>Alex Rivera</h4>
+              <p>Last session: 2 days ago · Next: Monday 4:30 PM</p>
+              <div class="tags">
+                <span>Caregiver update</span>
+                <span>Group</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel span-two">
+          <div class="panel-header">
+            <h3>New booking request</h3>
+            <button class="ghost">Save draft</button>
+          </div>
+          <form class="booking-form">
+            <label>
+              Client name
+              <input type="text" placeholder="e.g. Rowan Taylor" />
+            </label>
+            <label>
+              Session type
+              <select>
+                <option>Individual therapy</option>
+                <option>Couples therapy</option>
+                <option>Family therapy</option>
+                <option>Group session</option>
+              </select>
+            </label>
+            <label>
+              Preferred therapist
+              <input type="text" placeholder="e.g. Dr. N. Ross" />
+            </label>
+            <label>
+              Date & time
+              <input type="text" placeholder="e.g. 2024-11-18 2:00 PM" />
+            </label>
+            <label class="full">
+              Intake notes
+              <textarea rows="4" placeholder="Share presenting concerns, preferences, and accessibility needs."></textarea>
+            </label>
+            <div class="form-actions">
+              <button class="secondary" type="button">Add to waitlist</button>
+              <button class="primary" type="button">Confirm booking</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
